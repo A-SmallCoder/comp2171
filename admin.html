@@ -1,22 +1,32 @@
 <!DOCTYPE html> <html> <head>
-  <link href="./css/admin.css" type="text/css" rel="stylesheet"/ />
-</head> <body>
-  <img src= "img/page.jpg"/>   <br /><br />
-
+  <link href="styles/Admin.css" type="text/css" rel="stylesheet"/>
+</head>
+ <body>
+<div class="myGrid">
+  <div class"topBox">
+  <img src= "img/page.jpg"/>   <br> <br>
+</div>
+<div class="SideImage">
+    <img src="img/Admin.png" id="SecondImg"/>
+</div>
+<div class="CenterBox">
  <a href="signUp.html"><button id="employee" type="submit">add employee</button></a>
  <a href="register.html"><button id="customer" type="submit">add customer</button></a>
  <a href="logout.html"><button id="logout" type="submit">Logout</button></a>
-<br><br> <br /><br />
-
+<br> <br> <br ><br>
 <form method="post" action="/search">
-    <p>Customer Search: </p> <input id = "search" type = "text" name = "Firstname" placeholder = "firstname" required>
-    <button id="admin" type="submit">Search</button>   </form>
+    <p>
+      Customer Search:
+    </p>
+    <input id = "search" type = "text" name = "Firstname" placeholder = "firstname" required>
+    <button id="admin" type="submit">Search</button>
+</form>
 
     <ul><% cardsList.forEach(function(ui){ %>         <li>Issue: <%= ui.issue %> Status: <%= ui.status %></li>
 
       <% });%>     </ul>
+</div>
 
-
-
-
-</body> </html>
+</div>
+</body>
+</html>
