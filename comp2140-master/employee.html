@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles/employee.css" type="text/css" rel="stylesheet"/>
+</head>
+ <body>
+<div class="myGrid">
+   <div class="topBox">
+  <img src= "img/page.jpg" id="firstImg"/>   <br ><br >
+</div>
+<div class="SideBox">
+  <img src="img/employee.jpg"  id="SecondImg"/>
+</div>
+ <div class="SearchList">
+  <a href="register.html"><button id="customer" type="submit">add customer</button></a>
+  <a href="logout.html"><button id="logout" type="submit">Logout</button></a>
+</div>
+<div class="CenterBox">
+<form method="post" action="/search">
+    <p>Customer Search: </p> <input id = "search" type = "text" name = "Firstname" placeholder = "firstname" required>
+    <button id="admin" type="submit">Search</button>
+</form>
+
+    <ul><% cardsList.forEach(function(ui){ %>         <li>Issue: <%= ui.issue %> Status: <%= ui.status %></li>
+
+      <% });%>     </ul>
+
+</div>
+
+</div>
+</body>
+
+</html>

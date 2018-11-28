@@ -1,0 +1,40 @@
+body{
+  background-image: linear-gradient(#99c2ff,#3385ff,#0066ff);
+  height: 599px;
+  width: 580px
+}
+
+button{
+  background-color: #e7e7e7;
+  border-radius: 12px;
+  font-family: Times;
+  margin-left: 50px;
+}
+
+
+#secondImg{
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+
+}
+
+#Heading{
+  margin-left: 150px;
+
+}
+
+.secImg{
+  display: block;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 800px;
+}
+
+p{
+  margin-left: 50px;
+}
